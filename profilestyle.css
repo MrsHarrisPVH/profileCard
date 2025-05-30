@@ -1,0 +1,75 @@
+/* Basic body styling to center the card and apply a font */
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font from Google Fonts */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f2f5; /* Light grey background */
+    margin: 0; /* Remove default body margin */
+    padding: 20px; /* Add some padding around the edges */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Styling for the main profile card container */
+#profile-card {
+    border: 1px solid #ddd; /* Light grey border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 30px; /* Internal spacing */
+    margin: 50px auto; /* Top/bottom margin, auto for horizontal centering */
+    width: 300px; /* Fixed width for the card */
+    text-align: center; /* Center text content */
+    border-radius: 12px; /* Rounded corners for the card */
+    background-color: #ffffff; /* White background for the card */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Styling for the profile image */
+#profile-card img {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    border-radius: 50%; /* Makes the image circular */
+    display: block; /* Ensures it takes up its own line */
+    margin: 0 auto 15px auto; /* Center horizontally and add space below */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border: 3px solid #667eea; /* A nice border around the profile picture */
+}
+
+/* Styling for the name (h2) */
+#profile-card h2 {
+    color: #333; /* Darker text color */
+    font-size: 1.8em; /* Larger font size */
+    margin-bottom: 10px; /* Space below the name */
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+/* Styling for the bio paragraph (p) */
+#profile-card p {
+    color: #555; /* Slightly lighter text color */
+    font-size: 1em; /* Standard font size */
+    line-height: 1.6; /* Good line spacing for readability */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Styling for the toggle button */
+#profile-card button {
+    background-color: #667eea; /* Purple-blue background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners for the button */
+    cursor: pointer; /* Indicates it's clickable */
+    font-size: 1em; /* Standard font size */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the button */
+#profile-card button:hover {
+    background-color: #5a67d8; /* Slightly darker purple-blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* CSS class to hide elements */
+.hidden {
+    display: none; /* Hides the element completely */
+}
